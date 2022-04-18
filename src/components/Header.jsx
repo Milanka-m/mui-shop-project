@@ -5,7 +5,7 @@ import React from 'react'
 function Header({ handleCart, orderLen }) {
   return (
     <AppBar
-        position="static" //свойство для статического состояния header
+        position="static"
     >
       <Toolbar>
           <Typography
@@ -16,10 +16,9 @@ function Header({ handleCart, orderLen }) {
               Online Store
           </Typography>
           <IconButton
-            color="inherit" //свойство наследовать цвет от родительского компонента
+            color="inherit"
             onClick={handleCart}
           >
-            {/*Badge - компонент для отоброжения количества товаров в корзине */}
             <Badge
                 color="secondary"
                 badgeContent={orderLen}

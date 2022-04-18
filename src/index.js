@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider, createTheme } from '@mui/material' // для настройки своей темы
-
+import { ThemeProvider, createTheme } from '@mui/material'
 import './index.css';
 import App from './components/App';
 
-// внести изменения в существующей теме
 const theme = createTheme({
     palette: {
         primary: {

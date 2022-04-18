@@ -5,8 +5,6 @@ const GoodsItem = (props) => {
     const { name, price, setOrder, poster } = props;
 
     return (
-        /* самый маленький экран 12 колонок, экран побольше 4 колонки (будет влезать 3 карточки за раз) */
-        /* sx={{border: '1px solid red'}} */
         <Grid item xs={12} md={4}>
             <Card 
                 sx={{height: '100%'}}

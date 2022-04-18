@@ -75,13 +75,11 @@ const App = () => {
         <>
             <Header 
                 handleCart={() => setCartOpen(true)}
-                // передаем инфу о количестве товаров в корзине (красная цифра)
                 orderLen={order.length}
             />
-            {/* контейнер выстроился по середине при помощи компонента Container */}
             <Container
                 sx={{
-                    mt: '16px', // добавили отступ сверху перед всем контентом
+                    mt: '16px',
                 }}
             >
                 <Search

@@ -22,12 +22,10 @@ const Basket = (props) => {
                 </ListItemIcon>
                 <ListItemText primary="Корзина" />
             </ListItem>
-           {/*  Divider - разделитель (линия) после корзины */}
             <Divider />
 
             {!order.length 
             ? (<ListItem>Корзина пуста!</ListItem>)
-            /* если список товаров существует (не пустой), обойдем каждый его элемент, передаем в компонент BasketItem все пропсы через спред оператор  */
             : (
                 <>
                     {order.map((item) => (
